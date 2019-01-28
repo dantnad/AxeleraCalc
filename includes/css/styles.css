@@ -1,7 +1,9 @@
 body{
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  background-color: #745B6F;
+  background-image: url('../images/Axelera-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
