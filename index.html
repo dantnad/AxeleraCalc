@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700" rel="stylesheet">
 
   <!-- Custom Stylesheet -->
@@ -48,24 +49,26 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="card monto-credit">
+          <i class="fas fa-coins"></i>
           <h2>Monto de tu crédito</h2>
-          <input type="range" min="3000" max="150000" step="1000" name="Monto del credito" value="3000">
+          <input id="monto-range" type="range" min="3000" max="150000" step="1000" name="Monto del credito" value="3000">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1">$</span>
             </div>
-            <input id="monto" class="form-control" type="number" min="3000" max="150000" step="1000" name="Monto del credito" placeholder="Monto del credito" value="">
+            <input id="monto" class="form-control" type="number" min="3000" max="150000" step="1000" name="Monto del credito" placeholder="Monto del credito" value="3000">
           </div>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="card plazo-credit">
+          <i class="fas fa-calendar"></i>
           <h2>Plazo de tu crédito</h2>
-          <input type="range" min="3" max="24" step="1" name="" value="3">
+          <input id="plazo-range" type="range" min="3" max="24" step="1" name="" value="3">
           <div class="input-group mb-3">
-            <input class="form-control" id="plazo" type="number" min="3" max="24" name="Monto del credito" placeholder="Monto del credito" value="">
+            <input class="form-control" id="plazo" type="number" min="3" max="24" name="Plazo del credito" placeholder="Plazo del credito" value="3">
             <div class="input-group-append">
-              <span class="input-group-text" id="basic-addon2">Mensualidades</span>
+              <span class="input-group-text" id="basic-addon2">Meses</span>
             </div>
           </div>
         </div>
@@ -80,6 +83,8 @@
   </div>
 
   <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./includes/js/calc.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
