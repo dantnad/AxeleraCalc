@@ -44,8 +44,8 @@ $('#plazo').change(()=>{
   if($('#plazo').val() < 3){
     $('#plazo').val(3);
   };
-  if($('#monto').val() > 18){
-    $('#monto').val(3);
+  if($('#plazo').val() > 18){
+    $('#plazo').val(3);
   };
   $('#plazo-range').val($('#plazo').val());
   let total = ($('#plazo').val()*$('#monto').val()).toLocaleString();
