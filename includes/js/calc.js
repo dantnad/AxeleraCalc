@@ -21,6 +21,12 @@ $('#monto-range').change(()=>{
 })
 
 $('#monto').change(()=>{
+  if($('#monto').val() < 3000){
+    $('#monto').val(3000);
+  };
+  if($('#monto').val() > 180000){
+    $('#monto').val(3000);
+  };
   $('#monto-range').val($('#monto').val());
   let total = ($('#plazo').val()*$('#monto').val()).toLocaleString();
   console.log(total);
@@ -35,6 +41,12 @@ $('#plazo-range').change(()=>{
 })
 
 $('#plazo').change(()=>{
+  if($('#plazo').val() < 3){
+    $('#plazo').val(3);
+  };
+  if($('#monto').val() > 18){
+    $('#monto').val(3);
+  };
   $('#plazo-range').val($('#plazo').val());
   let total = ($('#plazo').val()*$('#monto').val()).toLocaleString();
   console.log(total);
